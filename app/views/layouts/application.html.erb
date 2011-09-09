@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookbook3</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h1>Online Cookbook</h1>
+
+<%= yield %>
+
+<p>
+   <%= link_to "Show all recipes", recipes_path %>
+   <%= link_to "Show all categories", categories_path %>
+</p>
+
+</body>
+</html>
