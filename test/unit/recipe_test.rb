@@ -5,6 +5,9 @@ class RecipeTest < ActiveSupport::TestCase
   #   assert true
   # end
 
-
+  test "should require all fields" do
+    r = Recipe.new
+    assert_false r.valid?
+  end
 
 end
