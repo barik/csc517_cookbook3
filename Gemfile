@@ -6,7 +6,6 @@ gem 'rails', '3.1.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem "memory_test_fix"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,7 +27,9 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
+  gem "memory_test_fix"
   gem 'test-unit'
   # Pretty printed test output
   gem 'turn', :require => false
+  gem "capybara"
 end
