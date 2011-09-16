@@ -5,3 +5,8 @@ one:
 
 two:
   name: MyString
+
+<% (1..1000).each do |i| %>
+fix_<%= i %>:
+  name: category_<%= i %>
+<% end %>
