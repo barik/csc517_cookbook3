@@ -133,11 +133,13 @@ PLATFORMS
 DEPENDENCIES
   capybara
   coffee-rails (~> 3.1.0)
+  execjs
   jquery-rails
   memory_test_fix
   rails (= 3.1.0)
   sass-rails (~> 3.1.0)
   sqlite3
   test-unit
+  therubyracer
   turn
   uglifier
